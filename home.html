@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="">
+    <script src="home.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <p>My Resume</p>
+<nav>
+<a href="#">About me</a>
+<a href="#">My projects</a>
+<a href="#">Contact me</a>
+</nav>
+    </header>
+
+    <main>
+        <section class="sec1">
+            <img src="me.png">
+        </section>
+        <section class="sec2" >
+        <div class="sec2_p">
+           <div class="sec2_p1"><p >Hello!</p></div>
+           <div class="sec2_p2"><p >My name is Maksym Hoshevskyi.</p></div>
+           <div class="sec2_p3"><p >Im young front-end developer</p></div>
+        </div>
+
+
+
+          
+           
+           
+        </section>
+
+    </main>
+    <footer >
+        <p >(c) Maksym Hoshevskyi</p>
+        <div class="container">
+            <div class="social">
+            <img src="instagram.png" class="socialImg1">
+            <img src="youtube.png" class="socialImg2">
+            <img src="facebook.png" class="socialImg3">
+        </div>         
+        <img src="menu.png" id="more" >
+        </div>
+        
+        
+    </footer>
+
+
+    <script>
+        const slideBar = document.querySelector('.social');
+        const slideImg1 = document.querySelector('.socialImg1')
+        const slideImg2 = document.querySelector('.socialImg2')
+        const slideImg3 = document.querySelector('.socialImg3')
+
+        const offset = 360
+        document.getElementById("more").addEventListener("click",function(){
+            if(slideBar.style.left === "0px"){
+                slideBar.style.left = "460px";
+
+
+                slideImg1.style.animation = 'rotateanim 1s forwards';
+
+                slideImg2.style.animation = 'rotateanim 1s forwards';
+
+                slideImg3.style.animation = 'rotateanim 1s forwards';
+
+                slideImg1.style.animation = 'none';
+                slideImg2.style.animation = 'none';
+                slideImg3.style.animation = 'none';
+            }
+            
+            else{
+                slideBar.style.left = '0px';
+                slideBar.style.alignItems = 'center';
+
+                
+                
+                slideImg1.style.animation = 'rotateanim 1s forwards';
+
+                slideImg2.style.animation = 'rotateanim 1s forwards';
+
+                slideImg3.style.animation = 'rotateanim 1s forwards';
+
+      
+            }
+        })
+
+
+    </script>
+</body>
+</html>
