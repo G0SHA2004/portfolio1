@@ -1,0 +1,172 @@
+body{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+header{
+display: flex;
+background-color: #12130F;
+margin: 0;
+height: 15%;
+width: 100%;
+align-items: center;}
+header p{
+    position: relative;
+    font-family:'Roboto';
+    width:max-content;
+    margin: 20px;
+    color:#EAE6E5;
+    display: inline-flex;
+    width: 40%;
+    animation: logo 1.5s forwards;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #EAE6E5;
+    font-family:'Roboto';
+
+}
+
+nav a:hover{
+border-bottom: #8FCB9B 2px solid;
+}
+
+@keyframes logo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+main{
+    position: relative;
+    display: flex;
+    background:linear-gradient(#8FCB9B,#5B9279) ;
+    height: 70%;
+}
+
+.sec1{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+@keyframes imganim{
+    0%{
+        top:-3%
+    }
+    100%{
+        top:3%
+    }
+}
+
+.sec1 img{
+    position: relative;
+    animation: imganim 2s infinite alternate;
+}
+
+.sec2{
+    display: inline;
+    width: 50%;
+    justify-content: left;
+}
+
+.sec2 div{
+    width: 100%;
+    position: relative;
+}
+
+.sec2 div p {
+    margin: 0;
+    color: #12130F;
+    font-family:'Roboto';
+}
+.sec2_p{
+    margin-top: 30%;
+    overflow: hidden;
+}
+@keyframes textanim{
+    0%{
+        left:50%;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+
+    }
+}
+.sec2_p1{
+    animation:textanim 1s forwards;
+}
+.sec2_p2{
+    animation:textanim 1.5s forwards;
+}
+.sec2_p3{
+    animation:textanim 2s forwards;
+}
+
+footer{
+    display: flex;
+    height: 15%;
+    width: 100%;
+    background-color: #12130F;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+footer p{
+    margin: 0;
+    color: #EAE6E5;
+    font-family:'Roboto';
+
+}
+.container{
+    display: flex;
+    height: min-content;
+}
+@keyframes rotateanim{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+footer img{
+display: flex;
+width: auto;
+height: 100px;
+cursor: pointer;
+float: right;
+animation: rotateanim 1s forwards;
+}
+
+.social{
+    position: relative;
+    display: flex;
+    width: 360px;
+    left: 460px;
+    transition: all ease 1s;
+}
+
+.socialImg1 ,.socialImg2 ,.socialImg3{
+position: relative;
+display: flex;
+width: 70px;
+height: 70px;
+margin-right: 50px;
+animation: none;
+}
+

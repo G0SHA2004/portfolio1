@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
+
+@media only screen and (max-width:4000px) {
+
+    header p{
+        font-size: 50px;
+    }
+    
+   
+    
+    nav a{
+        font-size: 40px;
+    }
+    
+    .sec1 img{
+        width: 400px;
+        margin-top: 10%;
+        height: 400px;
+    }
+    .sec2 div p {
+        margin: 0;
+        color: #12130F;
+        font-family:'Roboto';
+        font-size: 50px;
+    }
+    footer p{
+        font-size: 30px;
+    }
+ 
+}
+@media only screen and (max-width:1500px){
+    .sec2 div p {
+        margin: 0;
+        color: #12130F;
+        font-family:'Roboto';
+        font-size: 30px;
+    }
+    .sec1 img{
+        width: 400px;
+        margin-top: 10%;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    
+    header p{
+        font-size:40px;
+        
+    }
+    
+   
+    
+    nav a{
+        font-size: 20px; 
+    }
+
+    .sec1 img{
+        width: 50%;
+        margin-top:10%;
+        height: auto;
+    }
+    .sec2 div p {
+        margin: 0;
+        color: #12130F;
+        font-family:'Roboto';
+        font-size: 30px;
+    }
+    .sec1 img{
+        width: 350px;
+        margin-top: 15%;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .sec2 div p {
+        margin: 0;
+        color: #12130F;
+        font-family:'Roboto';
+        font-size: 20px;
+    }
+
+    .sec1 img{
+        width: 200px;
+        margin-top: 15%;
+        height: 200px;
+    }
+}
+
